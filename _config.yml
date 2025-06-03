@@ -1,6 +1,0 @@
-theme: jekyll-theme-minimal
-title: MJ's homepage
-description: Bookmark this to keep an eye on my project updates!
-caches:
-  images:
-    dir: :cacheDir/images
