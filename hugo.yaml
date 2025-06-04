@@ -1,13 +1,25 @@
-baseURL: https://example.org/
+baseURL: https://www.systeminit.dev/
 languageCode: en-us
-title: My New Hugo Site
-theme: ["PaperMod"]
+title: Systeminit Blog
+theme: PaperMod
+paginate: 5
+
+homeInfoParams:
+  Title: Hi there wave
+  Content: Can be Info, links, about...
+
+
 outputs:
   home:
     - HTML
     - RSS
     - JSON # necessary for search
 params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Systeminit Blog
+  description: "ExampleSite description"
+  keywords: [Blog, IT, Kubernetes, DevOps, Cloud, Linux, Docker, Open Source]
+  author: Marcin Jedyński
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -17,3 +29,6 @@ params:
     minMatchCharLength: 0
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+caches:
+  images:
+    dir: :cacheDir/images
