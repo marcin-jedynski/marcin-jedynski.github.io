@@ -2,8 +2,9 @@ baseURL: https://www.systeminit.dev/
 languageCode: en-us
 title: Systeminit Blog
 theme: PaperMod
-paginate: 5
-
+pagination:
+  pagerSize: 2
+  path: page
 homeInfoParams:
   Title: Hi there wave
   Content: Can be Info, links, about...
@@ -15,7 +16,7 @@ outputs:
     - RSS
     - JSON # necessary for search
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Systeminit Blog
   description: "ExampleSite description"
   keywords: [Blog, IT, Kubernetes, DevOps, Cloud, Linux, Docker, Open Source]
